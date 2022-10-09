@@ -136,7 +136,7 @@ header {
     align-items: center;
     margin-bottom: 30px; }
     .quienes_somos .quienes_somos__subtitle p {
-      width: 50%; }
+      width: 50vw; }
 
 .quienes_somos__info div {
   height: 800px;
@@ -186,7 +186,20 @@ header {
   .quienes_somos__foto2 img {
     height: 300px; }
 
-@media (max-width: 425px) {
+@media (max-width: 769px) {
+  /* Header */
+  header {
+    grid-template-areas: 0.25fr 1.75fr; }
+  /* Index */
+  .index__info div {
+    width: 40%; }
+  .beneficios__lista div {
+    justify-content: space-evenly; }
+    .beneficios__lista div li {
+      width: 40% !important; }
+  /* Quienes Somos */ }
+
+@media (max-width: 426px) {
   body {
     grid-template-rows: 150px 1fr 450px; }
   /* Header */
@@ -220,18 +233,12 @@ header {
     .index__info div {
       width: 70%; }
   .beneficios__lista div {
-    height: 200px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    height: 250px !important;
+    flex-direction: column !important;
+    justify-content: space-evenly !important; }
     .beneficios__lista div li {
       font-family: Arial, Helvetica, sans-serif;
-      width: 100%;
-      text-align: center; }
-      .beneficios__lista div li img {
-        height: 150px; }
+      width: 100%; }
   /* Quienes Somos */
   .main__quienes_somos {
     grid-template-rows: 0.5fr 10.5fr; }
