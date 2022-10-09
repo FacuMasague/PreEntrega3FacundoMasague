@@ -383,9 +383,11 @@ header {
       font-family: Arial, Helvetica, sans-serif;
       width: 100%; }
   /* Mascotas */
-  .mascotas__nutricion__info--center li a {
-    border-radius: 1rem;
-    padding: 2.5px 5px 2.5px 5px; }
+  .mascotas__nutricion__info--center li {
+    width: 50%; }
+    .mascotas__nutricion__info--center li a {
+      border-radius: 1rem;
+      padding: 2.5px 5px 2.5px 5px; }
   .mascotas__salud__info {
     height: 360px;
     grid-template-rows: 1fr 110px;
