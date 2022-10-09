@@ -1,7 +1,7 @@
 {
   "name": "preentrega3",
   "version": "1.0.0",
-  "description": "",
+  "description": "PreEntrega3 CooderHouse",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/FacuMasague/PreEntrega3FacundoMasague.git"
   },
-  "author": "",
+  "author": "facundo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/FacuMasague/PreEntrega3FacundoMasague/issues"
