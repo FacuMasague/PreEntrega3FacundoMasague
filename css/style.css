@@ -110,6 +110,82 @@ header {
       .beneficios .beneficios__lista div li img {
         height: 150px; }
 
+.main__quienes_somos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "quienesSomos_img" "quienesSomos"; }
+
+.quienes_somos__img {
+  grid-area: quienesSomos_img; }
+  .quienes_somos__img img {
+    width: 100%; }
+
+.quienes_somos {
+  margin-top: 30px;
+  grid-area: quienesSomos; }
+  .quienes_somos h1 {
+    text-align: center;
+    font-family: letraSubtitulo;
+    font-size: 2rem; }
+  .quienes_somos .quienes_somos__subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; }
+    .quienes_somos .quienes_somos__subtitle p {
+      width: 50%; }
+
+.quienes_somos__info div {
+  height: 800px;
+  list-style: none;
+  display: grid;
+  grid-template-rows: 400px 400px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "foto1 texto1" "texto2 foto2"; }
+  .quienes_somos__info div li {
+    font-family: Arial, Helvetica, sans-serif; }
+
+.quienes_somos__foto1 {
+  grid-area: foto1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .quienes_somos__foto1 img {
+    height: 300px; }
+
+.quienes_somos__texto1 {
+  grid-area: texto1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center; }
+  .quienes_somos__texto1 p {
+    width: 80%; }
+
+.quienes_somos__texto2 {
+  grid-area: texto2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center; }
+  .quienes_somos__texto2 p {
+    width: 80%; }
+
+.quienes_somos__foto2 {
+  grid-area: foto2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .quienes_somos__foto2 img {
+    height: 300px; }
+
 @media (max-width: 425px) {
   body {
     grid-template-rows: 150px 1fr 450px; }
@@ -144,10 +220,58 @@ header {
     .index__info div {
       width: 70%; }
   .beneficios__lista div {
-    flex-direction: column; }
+    height: 200px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     .beneficios__lista div li {
       font-family: Arial, Helvetica, sans-serif;
       width: 100%;
       text-align: center; }
       .beneficios__lista div li img {
-        height: 125px; } }
+        height: 150px; }
+  /* Quienes Somos */
+  .main__quienes_somos {
+    grid-template-rows: 0.5fr 10.5fr; }
+  .quienes_somos h1 {
+    text-align: center;
+    font-family: letraSubtitulo;
+    font-size: 1rem; }
+  .quienes_somos .quienes_somos__subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; }
+    .quienes_somos .quienes_somos__subtitle p {
+      width: 80%; }
+  .quienes_somos__info div {
+    height: 400px;
+    list-style: none;
+    display: grid;
+    grid-template-rows: 300px 300px 350px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "texto1" "foto1" "texto2" "foto2"; }
+  .quienes_somos__texto1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .quienes_somos__foto1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .quienes_somos__foto1 img {
+      width: 80%; }
+  .quienes_somos__texto2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .quienes_somos__foto2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .quienes_somos__foto2 img {
+      width: 80%; } }
