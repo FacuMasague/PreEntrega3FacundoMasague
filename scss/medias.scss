@@ -50,6 +50,39 @@
     }
 }
 
+@media (max-width: 648px) {
+    /* Mascotas */
+
+    .mascotas__nutricion__info{
+        height: 400px;
+        grid-template-rows: 1fr 140px;
+        grid-template-columns: 1fr;
+        grid-template-areas:"nutricion_center"
+                            "nutricion_right";
+    }
+
+    .mascotas__nutricion__info--left{
+        display: none;
+    }
+
+    .mascotas__nutricion__info--center{
+        li{
+            width: 33%;
+        }
+    }
+
+    .mascotas__nutricion__info--right{
+        height: 100px;
+        flex-direction: row;
+        li{
+            img{
+                width: 80%;
+            }
+        }
+    }
+    
+}
+
 @media (max-width: 426px) {
     body{
         grid-template-rows: 150px 1fr 450px;
@@ -112,6 +145,39 @@
             li{
                 font-family: Arial, Helvetica, sans-serif;
                 width: 100%;
+            }
+        }
+    }
+
+    /* Mascotas */
+
+    .mascotas__nutricion__info--center{
+        li{
+            a{
+                border-radius: 1rem;
+                padding: 2.5px 5px 2.5px 5px;
+            }
+        }
+    }
+
+    .mascotas__salud__info{
+        height: 360px;
+        grid-template-rows: 1fr 110px;
+        grid-template-columns: 1fr;
+        grid-template-areas:"salud_center"
+                            "salud_right";
+    }
+
+    .mascotas__salud__info--left{
+        display: none;
+    }
+
+    .mascotas__salud__info--right{
+        height: 100px;
+        flex-direction: row;
+        li{
+            img{
+                width: 80%;
             }
         }
     }

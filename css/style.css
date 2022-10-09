@@ -110,6 +110,122 @@ header {
       .beneficios .beneficios__lista div li img {
         height: 150px; }
 
+.main__mascotas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "mascotas_img" "mascotas_nutricion" "mascotas_salud"; }
+
+.mascotas__img {
+  grid-area: mascotas_img; }
+  .mascotas__img img {
+    width: 100%; }
+
+/* Nutricion */
+.mascotas__nutricion {
+  grid-area: mascotas_nutricion; }
+  .mascotas__nutricion #mascotas__nutricion__title {
+    text-align: center;
+    font-family: letraSubtitulo;
+    margin-top: 30px;
+    margin-bottom: 60px; }
+
+.mascotas__nutricion__info {
+  height: 250px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-areas: "nutricion_left nutricion_center nutricion_right"; }
+
+.mascotas__nutricion__info--left {
+  grid-area: nutricion_left; }
+
+.mascotas__nutricion__info--right {
+  grid-area: nutricion_right; }
+
+.mascotas__nutricion__info--center {
+  grid-area: nutricion_center;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+  .mascotas__nutricion__info--center li {
+    width: 50%;
+    text-align: center; }
+    .mascotas__nutricion__info--center li a {
+      border: 1px solid black;
+      border-radius: 2rem;
+      padding: 15px 20px 15px 20px;
+      text-decoration: none;
+      color: black; }
+      .mascotas__nutricion__info--center li a:hover {
+        background-color: #78C232; }
+
+.mascotas__nutricion__info--left,
+.mascotas__nutricion__info--right {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .mascotas__nutricion__info--left li,
+  .mascotas__nutricion__info--right li {
+    text-align: center; }
+    .mascotas__nutricion__info--left li img,
+    .mascotas__nutricion__info--right li img {
+      width: 80%; }
+
+/* Salud */
+.mascotas__salud {
+  grid-area: mascotas_salud; }
+  .mascotas__salud #mascotas__salud__title {
+    text-align: center;
+    font-family: letraSubtitulo;
+    margin-top: 30px;
+    margin-bottom: 60px; }
+
+.mascotas__salud__info {
+  height: 250px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-areas: "salud_left salud_center salud_right"; }
+
+.mascotas__salud__info--left {
+  grid-area: salud_left; }
+
+.mascotas__salud__info--right {
+  grid-area: salud_right; }
+
+.mascotas__salud__info--center {
+  grid-area: salud_center;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; }
+  .mascotas__salud__info--center p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; }
+  .mascotas__salud__info--center h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; }
+
+.mascotas__salud__info--left,
+.mascotas__salud__info--right {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .mascotas__salud__info--left li,
+  .mascotas__salud__info--right li {
+    text-align: center; }
+    .mascotas__salud__info--left li img,
+    .mascotas__salud__info--right li img {
+      width: 80%; }
+
 .main__quienes_somos {
   display: grid;
   grid-template-areas: "quienes_somos_img" "quienes_somos"; }
@@ -209,6 +325,23 @@ header {
     grid-template-columns: 1fr;
     grid-template-areas: "texto1" "foto1" "texto2" "foto2"; } }
 
+@media (max-width: 648px) {
+  /* Mascotas */
+  .mascotas__nutricion__info {
+    height: 400px;
+    grid-template-rows: 1fr 140px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nutricion_center" "nutricion_right"; }
+  .mascotas__nutricion__info--left {
+    display: none; }
+  .mascotas__nutricion__info--center li {
+    width: 33%; }
+  .mascotas__nutricion__info--right {
+    height: 100px;
+    flex-direction: row; }
+    .mascotas__nutricion__info--right li img {
+      width: 80%; } }
+
 @media (max-width: 426px) {
   body {
     grid-template-rows: 150px 1fr 450px; }
@@ -249,6 +382,22 @@ header {
     .beneficios__lista div li {
       font-family: Arial, Helvetica, sans-serif;
       width: 100%; }
+  /* Mascotas */
+  .mascotas__nutricion__info--center li a {
+    border-radius: 1rem;
+    padding: 2.5px 5px 2.5px 5px; }
+  .mascotas__salud__info {
+    height: 360px;
+    grid-template-rows: 1fr 110px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "salud_center" "salud_right"; }
+  .mascotas__salud__info--left {
+    display: none; }
+  .mascotas__salud__info--right {
+    height: 100px;
+    flex-direction: row; }
+    .mascotas__salud__info--right li img {
+      width: 80%; }
   /* Quienes Somos */
   .quienes_somos .quienes_somos__subtitle p {
     width: 90vw; }
