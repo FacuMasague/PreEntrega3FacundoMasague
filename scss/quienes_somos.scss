@@ -1,12 +1,11 @@
 .main__quienes_somos{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:"quienesSomos_img"
-                        "quienesSomos";
+    grid-template-areas:"quienes_somos_img"
+                        "quienes_somos";
 }
 
 .quienes_somos__img{
-    grid-area: quienesSomos_img;
+    grid-area: quienes_somos_img;
     img{
         width: 100%;
     }
@@ -14,22 +13,23 @@
 
 .quienes_somos{
     margin-top: $margin/2;
-    grid-area: quienesSomos;
+    width: 100vw;
+    grid-area: quienes_somos;
     h1{
         text-align: center;
         font-family: letraSubtitulo;
-        font-size: 2rem;
     }
     .quienes_somos__subtitle{
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
+        width: 100vw;
+        margin-bottom: $margin;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
-        margin-bottom: $margin/2;
-        p{  
+        p{
             width: 50vw;
+            text-align: center;
+            font-family: arial;
         }
     }
 }
@@ -39,24 +39,20 @@
         height: 800px;
         list-style: none;
         display: grid;
-        grid-template-rows: 400px 400px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:"foto1 texto1"
                             "texto2 foto2";
-        li{
-            font-family: Arial, Helvetica, sans-serif;
-        }
     }
 }
 
 .quienes_somos__foto1{
     grid-area: foto1;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     img{
-        height: 300px;
+        width: 60%;
     }
 }
 
@@ -66,9 +62,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    text-align: center;
     p{
-        width: 80%;
+        text-align: center;
+        width: 70%;
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
 
@@ -78,19 +75,23 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    text-align: center;
+    h2{
+        font-family: letraSubtitulo;
+    }
     p{
-        width: 80%;
+        text-align: center;
+        width: 70%;
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
 
 .quienes_somos__foto2{
     grid-area: foto2;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     img{
-        height: 300px;
+        width: 60%;
     }
 }

@@ -26,6 +26,28 @@
     }
 
     /* Quienes Somos */
+
+    .quienes_somos{
+        .quienes_somos__subtitle{
+            p{
+                width: 70vw;
+            }
+        }
+    }
+
+    .quienes_somos__info{
+        div{
+            height: 1250px;
+            list-style: none;
+            display: grid;
+            grid-template-rows: 300px 300px 350px 300px;
+            grid-template-columns: 1fr;
+            grid-template-areas:"texto1"
+                                "foto1"
+                                "texto2"
+                                "foto2";
+        }
+    }
 }
 
 @media (max-width: 426px) {
@@ -62,6 +84,7 @@
                 }
             }
         }
+        
     }
 
     /* Index */
@@ -95,70 +118,25 @@
 
     /* Quienes Somos */
 
-    .main__quienes_somos{
-        grid-template-rows: 0.5fr 10.5fr;
-    }
-
     .quienes_somos{
-        h1{
-            text-align: center;
-            font-family: letraSubtitulo;
-            font-size: 1rem;
-        }
         .quienes_somos__subtitle{
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
             p{
-                width: 80%;
+                width: 90vw;
             }
         }
     }
 
-    .quienes_somos__info{
-        div{
-            height: 400px;
-            list-style: none;
-            display: grid;
-            grid-template-rows: 300px 300px 350px 300px;
-            grid-template-columns: 1fr;
-            grid-template-areas:"texto1"
-                                "foto1"
-                                "texto2"
-                                "foto2";
-        }
-    }
-
-    .quienes_somos__texto1{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .quienes_somos__foto1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        img{
-            width: 80%;
-        }
-    }
-
-    .quienes_somos__texto2{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
+    .quienes_somos__foto1,
     .quienes_somos__foto2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         img{
-            width: 80%;
+            width: 90%;
+        }
+    }
+
+    .quienes_somos__texto1,
+    .quienes_somos__texto2{
+        p{
+            width: 90%;
         }
     }
 }
