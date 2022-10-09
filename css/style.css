@@ -17,11 +17,11 @@ body {
 
 @font-face {
   font-family: letraVerde;
-  src: url(../Assets/Fonts/Montserrat/static/Montserrat-Black.ttf); }
+  src: url(../assets/fonts/Montserrat/static/Montserrat-Black.ttf); }
 
 @font-face {
   font-family: letraSubTitulo;
-  src: url(../Assets/Fonts/Montserrat/static/Montserrat-Bold.ttf); }
+  src: url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf); }
 
 header {
   display: grid;
@@ -46,7 +46,7 @@ header {
       color: #78C232; }
 
 .footer__ondas {
-  background-image: url(../Assets/Images/wave.svg);
+  background-image: url(../assets/images/wave.svg);
   background-size: cover;
   height: 300px;
   width: 100%; }
