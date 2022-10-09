@@ -66,3 +66,83 @@ header {
       text-align: center;
       font-family: letraVerde;
       color: white; }
+
+.main__index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "index_img" "index_info" "beneficios"; }
+
+.index__img {
+  grid-area: index_img; }
+  .index__img img {
+    width: 100%; }
+
+.index__info {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  grid-area: index_info;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  .index__info div {
+    width: 30%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; }
+
+.beneficios {
+  grid-area: beneficios; }
+  .beneficios .beneficios__titulo {
+    text-align: center;
+    font-family: letraSubtitulo;
+    font-size: 2rem; }
+  .beneficios .beneficios__lista div {
+    height: 200px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .beneficios .beneficios__lista div li {
+      font-family: Arial, Helvetica, sans-serif;
+      width: 50%;
+      text-align: center; }
+      .beneficios .beneficios__lista div li img {
+        height: 150px; }
+
+@media (max-width: 425px) {
+  body {
+    grid-template-rows: 150px 1fr 450px; }
+  /* Header */
+  header {
+    border-bottom: 1px solid black;
+    display: grid;
+    grid-template-rows: 90px 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav_img" "nav"; }
+    header .header__img img {
+      height: 90px; }
+    header .header__nav {
+      grid-area: nav;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center; }
+      header .header__nav li a {
+        font-family: letraVerde;
+        text-decoration: none;
+        color: #78C232;
+        font-size: .9rem; }
+  /* Index */
+  .index__img img {
+    width: 100%; }
+  .beneficios__lista div {
+    flex-direction: column; }
+    .beneficios__lista div li {
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      text-align: center; }
+      .beneficios__lista div li img {
+        height: 125px; } }

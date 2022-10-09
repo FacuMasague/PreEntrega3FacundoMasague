@@ -1,0 +1,59 @@
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 425px) {
+    body{
+        grid-template-rows: 150px 1fr 450px;
+    }
+
+    /* Header */
+
+    header{
+        border-bottom: 1px solid black;
+        display: grid;
+        grid-template-rows: 90px 60px;
+        grid-template-columns: 1fr;
+        grid-template-areas:"nav_img"
+                            "nav";
+        .header__img{
+            img{
+                height: 90px;
+            }
+        }
+        .header__nav{
+            grid-area: nav;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            li{
+                a{
+                    font-family: letraVerde;
+                    text-decoration: none;
+                    color: #78C232;
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+
+    /* Index */
+    .index__img{
+        img{
+            width: 100%;
+        }
+    }
+    .beneficios__lista{
+        div{
+            flex-direction: column;
+            li{
+                font-family: Arial, Helvetica, sans-serif;
+                width: 100%;
+                text-align: center;
+                img{
+                    height: 125px;
+                }
+            }
+        }
+    }
+}
