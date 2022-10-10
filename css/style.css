@@ -139,7 +139,7 @@ header {
   .contacto__info--left li input {
     background-color: greenyellow;
     border-color: greenyellow;
-    border-radius: 2rem;
+    border-radius: .5rem;
     padding: 10px 100px 10px 100px; }
     .contacto__info--left li input:hover {
       background-color: #78C232;
@@ -150,7 +150,7 @@ header {
   .contacto__info--right li textarea {
     background-color: greenyellow;
     border-color: greenyellow;
-    border-radius: 2rem;
+    border-radius: .5rem;
     padding: 10px 100px 10px 100px; }
     .contacto__info--right li textarea:hover {
       background-color: #78C232;
