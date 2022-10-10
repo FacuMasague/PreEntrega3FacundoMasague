@@ -17,26 +17,36 @@
             <li><a href="quienes_somos.html">Quienes Somos</a></li>
         </nav>
     </header>
-    <main>
-        <figure class="img">
+    <main class="main__contacto">
+        <figure class="contacto__img">
             <img src="../assets/images/especializadobannerb.jpg" alt="Banner Productos de Comida">
         </figure>
-        <form action="" method="post">
-            <h1 id="contacto__titulo">Contacto</h1>
-            <div>
-                <input type="text" placeholder="Ingrese su Nombre">
-            </div>
-            <div>
-                <input type="text" placeholder="Ingrese su e-mail">
-            </div>
-            <div>
-                <input type="text" placeholder="Ingrese su Telefono">
-            </div>
-            <div>
-                <textarea name="ComentarioyConsulta" id="" cols="30" rows="10" placeholder="Comentario/Consulta"></textarea>
-            </div>
-            <input type="submit" value="Enviar">
-        </form>
+        <section  class="contacto">
+            <form action="" method="post">
+                <h1>Contacto</h1>
+                <div class="contacto__info">
+                    <div class="contacto__info--left">
+                        <li>
+                            <input type="text" placeholder="Ingrese su Nombre">
+                        </li>
+                        <li>
+                            <input type="text" placeholder="Ingrese su e-mail">
+                        </li>
+                        <li>
+                            <input type="text" placeholder="Ingrese su Telefono">
+                        </li>
+                    </div>
+                    <div class="contacto__info--right">
+                        <li>
+                            <textarea name="ComentarioyConsulta" id="" cols="30" rows="10" placeholder="Comentario/Consulta"></textarea>
+                        </li>
+                    </div>
+                </div>
+                <div class="contacto__boton">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <section class="footer">

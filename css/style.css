@@ -110,6 +110,66 @@ header {
       .beneficios .beneficios__lista div li img {
         height: 150px; }
 
+.contacto__img img {
+  width: 100%; }
+
+.contacto {
+  margin-top: 30px; }
+  .contacto form h1 {
+    text-align: center;
+    font-family: letraSubtitulo;
+    margin-bottom: 60px; }
+
+.contacto__info {
+  list-style: none;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contacto_left contacto_right"; }
+
+.contacto__info--left,
+.contacto__info--right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.contacto__info--left {
+  grid-area: contacto_left; }
+  .contacto__info--left li input {
+    background-color: greenyellow;
+    border-color: greenyellow;
+    border-radius: 2rem;
+    padding: 10px 100px 10px 100px; }
+    .contacto__info--left li input:hover {
+      background-color: #78C232;
+      border-color: #78C232; }
+
+.contacto__info--right {
+  grid-area: contacto_right; }
+  .contacto__info--right li textarea {
+    background-color: greenyellow;
+    border-color: greenyellow;
+    border-radius: 2rem;
+    padding: 10px 100px 10px 100px; }
+    .contacto__info--right li textarea:hover {
+      background-color: #78C232;
+      border-color: #78C232; }
+
+.contacto__boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .contacto__boton input {
+    border-color: greenyellow;
+    border-radius: 1rem;
+    padding: 10px 20px 10px 20px;
+    background-color: greenyellow; }
+    .contacto__boton input:hover {
+      background-color: #78C232;
+      border-color: #78C232; }
+
 .main__mascotas {
   display: grid;
   grid-template-columns: 1fr;
