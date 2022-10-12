@@ -25,6 +25,16 @@
         }
     }
 
+    /* Contacto */
+
+    .contacto__info{
+        height: 600px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:"contacto_left"
+                            "contacto_right";
+    }
+
     /* Quienes Somos */
 
     .quienes_somos{
@@ -145,6 +155,16 @@
             li{
                 font-family: Arial, Helvetica, sans-serif;
                 width: 100%;
+            }
+        }
+    }
+
+    /* Contacto */
+
+    .contacto__info--right{
+        li{
+            textarea{
+                padding: 10px 75px 10px 75px !important;
             }
         }
     }
