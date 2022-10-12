@@ -159,6 +159,32 @@
         }
     }
 
+    /* Alimentos */
+
+    .alimentos__autoservicio__info--grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .alimentos__autoservicio__info--left{
+        margin-bottom: 10px;
+    }
+
+    .alimentos__autoservicio__info--right{
+        margin-top: 10px;
+    }
+
+    .alimentos__autoservicio__info--left,
+    .alimentos__autoservicio__info--right,
+    .alimentos__autoservicio__info--center{
+        h4{
+            width: 80%;
+        }
+        p{
+            width: 80%;
+        }
+    }
+
     /* Contacto */
 
     .contacto__info--right{
