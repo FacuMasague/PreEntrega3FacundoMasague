@@ -17,11 +17,10 @@
     }
 
     .beneficios__lista{
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr 1fr !important;
         div{
-            justify-content: space-evenly;
-            li{
-                width: 40% !important;
-            }
+            height: 250px !important;
         }
     }
 
@@ -50,12 +49,30 @@
             height: 1250px;
             list-style: none;
             display: grid;
-            grid-template-rows: 300px 300px 350px 300px;
             grid-template-columns: 1fr;
             grid-template-areas:"texto1"
                                 "foto1"
                                 "texto2"
                                 "foto2";
+        }
+    }
+
+    .quienes_somos__foto1,
+    .quienes_somos__foto2{
+        align-items: center;
+        img{
+            text-align: center;
+        }
+    }
+
+    .quienes_somos__texto1,
+    .quienes_somos__texto2{
+        align-items: center;
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
         }
     }
 }
@@ -148,15 +165,8 @@
     }
 
     .beneficios__lista{
-        div{
-            height: 250px !important;
-            flex-direction: column !important;
-            justify-content: space-evenly !important;
-            li{
-                font-family: Arial, Helvetica, sans-serif;
-                width: 100%;
-            }
-        }
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr !important;
     }
 
     /* Alimentos */

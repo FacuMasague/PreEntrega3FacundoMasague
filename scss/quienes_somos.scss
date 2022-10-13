@@ -27,7 +27,7 @@
         justify-content: space-evenly;
         align-items: center;
         p{
-            width: 50vw;
+            width: 60%;
             text-align: center;
             font-family: arial;
         }
@@ -50,9 +50,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: end;
     img{
-        width: 60%;
+        margin-right: 20px;
+        width: 70%;
+        border-radius: 1rem;
     }
 }
 
@@ -61,10 +63,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: start;
     p{
-        text-align: center;
-        width: 70%;
+        margin-left: 20px;
+        width: 75%;
         font-family: Arial, Helvetica, sans-serif;
     }
 }
@@ -74,13 +76,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: end;
     h2{
+        margin-right: 20px;
         font-family: letraSubtitulo;
+        width: 75%;
     }
     p{
-        text-align: center;
-        width: 70%;
+        margin-right: 20px;
+        width: 75%;
         font-family: Arial, Helvetica, sans-serif;
     }
 }
@@ -90,8 +94,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: start;
     img{
-        width: 60%;
+        margin-left: 20px;
+        width: 70%;
+        border-radius: 1rem;
     }
 }
